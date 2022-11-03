@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 126px;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: brown;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.img{
+    max-width: 100%;
+    float: right;
+    padding: 14px 56px;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.navbar ul li {
+    margin-left: 30px; /*spaces inside LIs */
+}
+
+.navbar a{
+    font-size: 18px;
+    color: wheat;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.navbar a:hover{
+
+    color: rosybrown;
+}
+
+.navbar .container_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* align text nav to center */
+    height: 100%; /* center the text inside the navbar */
+}
+
+
+/* HEADER */
+
+.container_head{
+    display: block;
+    margin: 0 auto;
+    background-color: beige;
+    min-height: 400px;
+    padding-left: 300px;
+    padding-right: 200px;
+    
+}
+
+.container_head h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.container_head img{
+    max-width: 400px;
+    margin-left: 200px;
+}
+
+.header .container_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*boxes */
+.boxes .container_box{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 250px 20px 250px;
+}
+
+.box{
+    padding: 20px;
+    flex: 1;
+    background-color: papayawhip;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 2px 2px 1px;
+}
+
+/* quote */
+
+.container_quote{
+    display: block;
+    margin: 0 auto;
+    background-color: beige;
+    min-height: 250px;
+    padding-left: 300px;
+    padding-right: 200px;
+    
+}
+
+.container_quote h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.quote .container_quote{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quote .container_quote .quote_name{
+    text-align: right;
+}
+
+.footer {
+    background-color: brown;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    
+}
+
+.footer p {
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+@media (max-width: 768px){
+    .header .container_head .img {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .boxes .container_box {
+        display: block;
+        text-align: center;
+    }
+}
+
